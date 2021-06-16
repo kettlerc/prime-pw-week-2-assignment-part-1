@@ -89,7 +89,7 @@ if (pets < allowedPets){
 // console.log `mostPets` after the conditional has run.
 
 let mostPets;
-if (pets > friendsPets) {
+if (pets >= friendsPets) {
   mostPets = pets;
 } else {
   mostPets = friendsPets;
@@ -97,14 +97,13 @@ if (pets > friendsPets) {
 console.log(mostPets);
 
 // 17 - Rewrite question 16 with a `switch` statement. You'll need to do research!
-let mostPets = 1;
-switch (mostPets) {
-  case 1:
-    pets > friendsPets;
+
+let mostPets = 0;
+switch (true) {
+  case (pets >= friendsPets):
     mostPets = pets;
   break;
-  case 2:
-    friendsPets > pets;
+  case (friendsPets > pets):
     mostPets = friendsPets;
   break;
 }
@@ -113,5 +112,4 @@ console.log(mostPets);
 
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
 
-let mostPets = (pets > friendsPets) ? pets : friendsPets;
-console.log(mostPets);
+(adventurous) ? console.log('Adventures are great!') : console.log('How about we stay home?');
